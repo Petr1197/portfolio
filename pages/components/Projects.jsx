@@ -18,17 +18,17 @@ const Projects = () => {
           <ProjectItem
             title="Project Placeholder 1"
             backgroundImg={project1}
-            projectUrl="/Project1"
+            projectUrl="/"
           />
           <ProjectItem
             title="Project Placeholder 2"
             backgroundImg={project2}
-            projectUrl="/Project2"
+            projectUrl="/"
           />
           <ProjectItem
             title="Project Placeholder 3"
             backgroundImg={project3}
-            projectUrl="/Project3"
+            projectUrl="/"
           />
         </div>
       </div>
