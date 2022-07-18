@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 const About = () => {
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
@@ -18,9 +19,11 @@ const About = () => {
             minima optio aliquam repudiandae cupiditate sed nobis, expedita modi
             fuga aut alias minus eos ab asperiores fugiat?
           </p>
-          <p className="py-2 text-gray-600 underline cursor-pointer">
-            Check out some projects I&apos;ve made
-          </p>
+          <Link href="/#projects">
+            <p className="py-2 text-gray-600 underline cursor-pointer">
+              Check out some projects I&apos;ve made
+            </p>
+          </Link>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <img
