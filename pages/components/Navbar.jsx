@@ -32,7 +32,7 @@ const Navbar = () => {
           : "fixed w-full h-20 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-4 md:px-16 ">
+      <div className="flex justify-between items-center w-full h-full px-4 md:px-16 bg-[#ecf0f3] ">
         <Link href="/">
           <Image src="/assets/PG (3).png" alt="/" width="120" height="80" />
         </Link>
