@@ -145,11 +145,12 @@ const Navbar = () => {
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <AiOutlineMail />
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div
+                  onClick={() => setNav(false)}
+                  className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                >
                   <Link href="/#contact">
-                    <li onClick={() => setNav(false)} className="py-4 text-sm">
-                      <BsFillPersonLinesFill />
-                    </li>
+                    <BsFillPersonLinesFill />
                   </Link>
                 </div>
               </div>

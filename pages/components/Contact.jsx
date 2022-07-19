@@ -3,6 +3,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import emailjs from "emailjs-com";
+import Link from "next/link";
 
 const Contact = () => {
   function sendEmail(e) {
@@ -57,16 +58,22 @@ const Contact = () => {
                   <p className="uppercase pt-8">Connect With Me</p>
                   <div className="flex items-center justify-between py-4">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaLinkedinIn />
+                      <Link href="https://www.linkedin.com/in/peter-gram-93440416b/">
+                        <FaLinkedinIn />
+                      </Link>
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaGithub />
+                      <Link href="https://github.com/Petr1197">
+                        <FaGithub />
+                      </Link>
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <AiOutlineMail />
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <BsFillPersonLinesFill />
+                      <Link href="/#contact">
+                        <BsFillPersonLinesFill />
+                      </Link>
                     </div>
                   </div>
                 </div>
