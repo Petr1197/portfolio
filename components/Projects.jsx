@@ -1,9 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import project1 from "../../public/assets/projects/cat1.avif";
-import project2 from "../../public/assets/projects/cat2.avif";
-import project3 from "../../public/assets/projects/cat3.avif";
+import nextflix from "../public/assets/projects/nextflix-thumbnail.png";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -16,19 +14,10 @@ const Projects = () => {
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="Project Placeholder 1"
-            backgroundImg={project1}
-            projectUrl="/"
-          />
-          <ProjectItem
-            title="Project Placeholder 2"
-            backgroundImg={project2}
-            projectUrl="/"
-          />
-          <ProjectItem
-            title="Project Placeholder 3"
-            backgroundImg={project3}
-            projectUrl="/"
+            title="Nextflix"
+            backgroundImg={nextflix}
+            projectUrl="/Nextflix"
+            skills="Nextjs Tailwind Typescript"
           />
         </div>
       </div>

@@ -4,10 +4,24 @@ import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const router = useRouter();
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+
+  useEffect(() => {
+    if (router.asPath === "/Nextflix") {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+    }
+  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -26,18 +40,22 @@ const Navbar = () => {
 
   return (
     <div
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
           : "fixed w-full h-20 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-4 md:px-16 bg-[#ecf0f3] ">
+      <div className="flex justify-between items-center w-full h-full px-4 md:px-8">
         <Link href="/">
-          <Image src="/assets/PG (3).png" alt="/" width="120" height="80" />
+          <Image src="/assets/PG (4).png" alt="/" width="120" height="80" />
         </Link>
         <div>
-          <ul className="hidden md:flex space-x-10">
+          <ul
+            style={{ color: `${linkColor}` }}
+            className="hidden md:flex space-x-10"
+          >
             <Link href="/">
               <li calssName="ml-10 text-small uppercase hover:border-b">
                 Home
