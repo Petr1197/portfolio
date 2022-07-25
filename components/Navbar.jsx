@@ -57,27 +57,27 @@ const Navbar = () => {
             className="hidden md:flex space-x-10"
           >
             <Link href="/">
-              <li calssName="ml-10 text-small uppercase hover:border-b">
+              <li className="ml-10 text-small uppercase hover:border-b">
                 Home
               </li>
             </Link>
             <Link href="/#about">
-              <li calssName="ml-10 text-small uppercase hover:border-b">
+              <li className="ml-10 text-small uppercase hover:border-b">
                 About
               </li>
             </Link>
             <Link href="/#skills">
-              <li calssName="ml-10 text-small uppercase hover:border-b">
+              <li className="ml-10 text-small uppercase hover:border-b">
                 Skills
               </li>
             </Link>
             <Link href="/#projects">
-              <li calssName="ml-10 text-small uppercase hover:border-b">
+              <li className="ml-10 text-small uppercase hover:border-b">
                 Projects
               </li>
             </Link>
             <Link href="/#contact">
-              <li calssName="ml-10 mr-20 text-small uppercase hover:border-b">
+              <li className="ml-10 mr-20 text-small uppercase hover:border-b">
                 Contact
               </li>
             </Link>
